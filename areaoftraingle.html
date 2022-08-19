@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is a triangle?</title>
-    <link rel="stylesheet" href="./istraingle.css">
+    <title>Area of Triangle</title>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
@@ -14,8 +14,9 @@
     referrerpolicy="no-referrer"
   />
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./istraingle.css">
+  <link rel="stylesheet" href="./areaoftriangle.css">
 </head>
+
 <body>
     <nav>
         <input type="checkbox" id="check">
@@ -31,16 +32,14 @@
         </ul>
       </nav>
     <div class="container">
-        <h1>Is triangle?</h1>
-        <label for="angle1">angle1</label>
-        <input  type="number" class="angle-input" />
-        <label for="angle2">angle2</label>
-        <input  type="number" class="angle-input" />
-        <label for="angle3">angle3</label>
-        <input  type="number" class="angle-input" />
-        <button id="is-triangle-button">Is triangle?</button>
-        <div id="output"></div>
+        <label for="base-value">Enter Base value : </label>
+        <input type="number" id="base-value" class="input" />
+        <label for="height-value">Enter Height value : </label>
+        <input type="number" id="height-value" class="input" />
+        <button id="submit">Calculate Area</button>
+        <h3 id="output"></h3>
     </div>
-        <script src="./istriangle.js" ></script>
+    <script src="./areaoftriangle.js"></script>
 </body>
+
 </html>

@@ -6,16 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcualte Hypotenuse</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./hypotenuse.css">
 </head>
 
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Fun with Triangle</label>
+        <ul>
+          <li><a class="active" href="./istriangle.html">Is traingle?</a></li>
+          <li><a href="./quiz.html">Traingle Quiz</a></li>
+          <li><a href="./hypotenuse.html">Hypotenuse Traingle</a></li>
+          <li><a href="./areaoftraingle.html">Area of Traingle</a></li>
+        </ul>
+      </nav>
+    <div class="container">
     <h1>Calculate Hypotenuse</h1>
     <label>a = </label>
     <input type="number" class="side-input" />
     <label>b =</label>
-    <input type="number" class="side-input" />
+    <input type="number" class="side-input" /><br />
     <button id="hypotenuse-btn">Calcualte Hypotenuse</button>
     <div id="output"></div>
+</div>
     <script src="./hypotenuse.js"></script>
 </body>
 

@@ -6,10 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triangle Quiz</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./quiz.css">
 </head>
 
 <body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Fun with Triangle</label>
+        <ul>
+          <li><a class="active" href="./istriangle.html">Is traingle?</a></li>
+          <li><a href="./quiz.html">Traingle Quiz</a></li>
+          <li><a href="./hypotenuse.html">Hypotenuse Traingle</a></li>
+          <li><a href="./areaoftraingle.html">Area of Traingle</a></li>
+        </ul>
+      </nav>
     <h1>Triangle Quiz</h1>
+    <div class="container">
     <form class="quiz-form">
         <div class="question-container">
             <p>What is the third angle for the triangle where angle1 = 45° and angle2 = 45°?</p>
@@ -45,7 +68,8 @@
             <p>What is a triangle?</p>
             <label><input type="radio" name="question6" value="A geometric figure" />A geometric figure</label>
             <label><input type="radio" name="question6" value="A piece of art" />A piece of art</label>
-            <label><input type="radio" name="question6" value="An form of architecture" />An form of architecture</label>
+            <label><input type="radio" name="question6" value="An form of architecture" />An form of
+                architecture</label>
         </div>
         <div class="question-container">
             <p>How many dimensions does a triangle have?</p>
@@ -71,8 +95,9 @@
             <label><input type="radio" name="question10" value="Hypopothamus" />Hypopothamus</label>
             <label><input type="radio" name="question10" value="Hypotenuse" />Hypotenuse</label>
         </div>
-    </form><br />
-    <button id="submit-answer-btn">Submit Answers</button>
+        <button id="submit-answer-btn">Submit Answers</button>
+    </form></div><br />
+    
     <div id="output"></div>
 
     <script src="./quiz.js"></script>
