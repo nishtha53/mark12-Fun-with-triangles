@@ -1,6 +1,6 @@
-/* body{
+body{
     height: 100vh;
-} */
+}
 .container{
     width: 600px;
     margin-top: 9vh;
@@ -17,18 +17,17 @@ form{
 }
 form .question-container{
     margin: 0.5rem 0.5rem;
-    text-align: justify;
+    /* text-align: justify; */
     font-weight: bold;
 }
-form .question-container p:before {
+/* form .question-container p:before {
     margin-right: 5px;
     display: inline-block;
-}
-form .question-container input {
+} */
+/* form .question-container input {
     transform: scale(1.5);
-    margin: 0 0.5rem;
-   
-}
+    margin: 0 0.5rem;  
+} */
 .container #submit-answer-btn{
     background-color: #022f69;
     color:  #fff;
@@ -36,11 +35,10 @@ form .question-container input {
     margin-top: 5vh;
     border: none;
     padding: 0.5rem 1rem;
-    text-transform: uppercase;
     text-align: center;
-}
+} 
 #output{
     font-size: 1.5rem;
-    margin-top: 3vh;
     text-align: center;
+    color:  black;
 }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
 
 *{
     padding: 0;
@@ -6,17 +6,16 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    font-family: 'Dosis', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
-  body{
-    font-family: montserrat;
-  }
+
   nav{
     background: #022f69;
     height: 80px;
     width: 100%;
+    font-weight: bold;
   }
-  label.logo{
+  label .logo{
     color: #fff;
     font-size: 35px;
     line-height: 80px;

@@ -1,4 +1,4 @@
-const quizForm = document.querySelector('.quiz-form');
+const quizFormValue = document.querySelector('.quiz-form');
 const submitAnswer = document.querySelector('#submit-answer-btn');
 const outputScore = document.querySelector('#output');
 
@@ -18,7 +18,7 @@ const correctAnswer = [
 function calculateScore(){
     let score = 0;
     let index = 0;
-    const formResults = new FormData(quizForm);
+    const formResults = new FormData(quizFormValue);
     console.log(formResults);
     for(let value of formResults.values()){
         // console.log(value);
@@ -32,4 +32,5 @@ function calculateScore(){
 }
 
 
-submitAnswer.addEventListener('click',calculateScore);
+
+submitAnswer.addEventListener('click', calculateScore);
