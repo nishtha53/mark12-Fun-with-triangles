@@ -15,7 +15,8 @@ const correctAnswer = [
     "Hypotenuse"
 ];
 
-function calculateScore(){
+function calculateScore(e){
+    e.preventDefault();
     let score = 0;
     let index = 0;
     const formResults = new FormData(quizFormValue);
@@ -28,7 +29,6 @@ function calculateScore(){
         index = index + 1;
     }
     outputScore.innerText = "Your score is " + score;
-    console.log(outputScore);
 }
 
 

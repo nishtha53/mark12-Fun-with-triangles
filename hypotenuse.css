@@ -9,6 +9,7 @@ h1{
 }
 div label{
     display: block;
+    font-weight: bold;
 }
 .container input{
     width: 70%;
