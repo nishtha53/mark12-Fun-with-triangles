@@ -2,16 +2,24 @@ const sideInput = document.querySelectorAll(".side-input");
 const hypotenuseBtn = document.querySelector("#hypotenuse-btn")
 const outputAns = document.querySelector("#output");
 
-function calculateSumOfSquares(a,b){
-    const sumOfSquares = a*a + b*b;
-    return sumOfSquares;
+function calculateHypotenuse(lenghts) {
+    let hypotenuse = 0;
+    for (let i = 0; i < lenghts.length; i++) {
+        if (lenghts[i].value == "" || Number(lenghts[i].value) < 0) {
+            hypotenuse = 0;
+            break;
+        } else {
+            hypotenuse = hypotenuse + (Number((lenghts[i].value) ** 2));
+        }
+    }
+    hypotenuse = Math.sqrt(hypotenuse);
+    return hypotenuse;
 }
-
-
-function calculateHypotenuse(){
-    const sumOfSqaures = calculateSumOfSquares(Number(sideInput[0].value) , Number(sideInput[1].value));
-    const lengthOfHypotenuse = Math.sqrt(sumOfSqaures);
-    outputAns.innerText = "Length of Hypotenuse is " + lengthOfHypotenuse.toFixed(2);
-}
-
-hypotenuseBtn.addEventListener("click", calculateHypotenuse);
+hypotenuseBtn.addEventListener('click', () => {
+    let hypotenuse = calculateHypotenuse(sideInput);
+    if (hypotenuse == 0) {
+        outputAns.innerText = `Enter valid length of sides `;
+    } else {
+        outputAns.innerText = `Hypotenuse is  ${hypotenuse.toFixed(2)}`;
+    }
+});

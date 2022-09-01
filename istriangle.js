@@ -13,6 +13,9 @@ function isTriangle(){
     if(sumOfAngles === 180){
         outputEL.innerText = "Yayy😀!! The angles form a triangle";
     }
+    else if(sumOfAngles<=1){
+        outputEL.innerText = "Enter valid input it should not take negaive or 0 value"
+    }
     else{
         outputEL.innerText = "Oh No😟!! The angles don't  form a triangle";
     }
