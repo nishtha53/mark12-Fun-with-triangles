@@ -33,7 +33,7 @@
   }
   
   .nav-item a:hover {
-    color: var(--clr-primary-dark);
+    color: white
   }
   
   .nav-item:first-child {
