@@ -9,91 +9,34 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  nav{
-    background: #022f69;
-    height: 80px;
-    width: 100%;
+  .nav-list {
+    background: darkblue;
+    box-shadow: 0px 0px 10px var(--clr-gray200);
+    padding: 1rem 0;
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .nav-item {
+    list-style: none;
+    margin-right: 2rem;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
   }
-  label .logo{
-    color: #fff;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
+  
+  .nav-item a {
+    text-decoration: none;
+    color: white;
+    transition: all 200ms ease-in;
   }
-  nav ul{
-    float: right;
-    margin-right: 20px;
+  
+  .nav-item a:hover {
+    color: var(--clr-primary-dark);
   }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    color: #fff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    background: #fff;
-    transition: .5s;
-    color: #022f69;
-  }
-  .checkbtn{
-    font-size: 30px;
-    color: #fff;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  @media (max-width: 968px){
-    label.logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 875px){
-    .checkbtn{
-      display: block;
-    }
-    nav ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #27282c;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover, a.active{
-      background: none;
-      color: #0082e6;
-    }
-    label .logo{
-      display: none;
-    } 
-    #check:checked ~ ul{
-      left: 0;
-    }
+  
+  .nav-item:first-child {
+    margin-right: auto;
+    margin-left: 2rem;
   }
