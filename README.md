@@ -26,3 +26,9 @@ Fun with triangles is divided into four parts:
  # Demo of Project
  
  [Demo](https://mark-12fun-with-triangles.netlify.app/)
+ 
+ <a href="https://github.com/Anudeep-313/mini-project/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Anudeep-313/mini-project" />
+</a>
+
+
